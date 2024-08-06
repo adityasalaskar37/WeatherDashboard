@@ -1,0 +1,108 @@
+body {
+    background: linear-gradient(to bottom, rgb(54, 54, 166), skyblue);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(80px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(66, 83, 144);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2em;
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+#city-input {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-btn:hover {
+    background-color: #0056b3;
+}
+
+#weather-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.weather-box, .forecast-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Opaque-blurred background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.forecast-item {
+    flex: 1 1 calc(20% - 10px);
+    background-color: rgba(255, 255, 255, 0.8); /* Opaque-blurred background */
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow */
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.loading {
+    font-size: 1.5em;
+    color: #007BFF;
+}
+
+.hidden {
+    display: none;
+}
