@@ -6,11 +6,11 @@ The Weather Dashboard is a dynamic web application that allows users to search f
 ## Setup Instructions
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/weather-dashboard.git
+    git clone https://github.com/adityasalaskar37/WeatherDashboard.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd weather-dashboard
+    cd WeatherDashboard
     ```
 3. Open `index.html` in your preferred web browser.
 
