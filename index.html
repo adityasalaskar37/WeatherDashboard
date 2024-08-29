@@ -3,30 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Weather Mate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Weather Dashboard</h1>
-            <div class="user-icon">
-                <i class="fas fa-user"></i> User
-            </div>
-        </header>
-        <div class="search-box">
-            <input type="text" id="city-input" placeholder="Enter city name">
-            <button id="search-btn">Search</button>
+    <header class="header">
+        <div class="header-left">
+            <span class="material-symbols-outlined menu-icon">menu</span>
         </div>
-        <div id="weather-container">
-            <div id="loading" class="loading hidden">Loading...</div>
-            <div id="current-weather" class="weather-box"></div>
-            <div id="additional-info" class="weather-box"></div>
-            <div id="forecast-weather" class="forecast-container"></div>
+        <div class="header-center">
+            <img src="logo.png" alt="Weather Mate Logo" class="logo">
+            <h1 class="app-title">Weather Mate</h1>
         </div>
-        <footer>@aditya_salaskar_37</footer>
+        <div class="header-right">
+            <span class="material-symbols-outlined person-icon">person</span>
+            <a href="#a" class="user-link">User</a>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="left-container"></div>
+        <div class="right-container"></div>
     </div>
-    <script src="main.js"></script>
+
+    <div class="search-container">
+        <input type="text" class="search-box" placeholder="Search location">
+        <button class="search-btn">
+            <span class="material-symbols-outlined">search</span>
+        </button>
+        <button class="location-btn">
+            <span class="material-symbols-outlined">my_location</span>
+        </button>
+    </div>
+
+    <div class="main-container2">
+        <div class="wrapper">
+            <div class="container">
+                
+                <div class="left_section">
+                    <div class="big_container1">
+                        <span class="small_span"></span>
+                        <span class="small_span"></span>
+                        <span class="small_span"></span>
+                        <span class="small_span"></span>
+                    </div>
+                    <div class="small_container"></div>
+                </div>
+
+                <div class="big_container2">
+                    <div class="top_container">
+                        <canvas id="weatherChart"></canvas>
+                    </div>
+                    <span class="line" style="width: 88%; height: 1px;"></span>
+                    <div class="bottom_container">
+                        <span class="small_span"></span>
+                        <span class="line"></span>
+                        <span class="small_span"></span>
+                        <span class="line"></span>
+                        <span class="small_span"></span>
+                        <span class="line"></span>
+                        <span class="small_span"></span>
+                        <span class="line"></span>
+                        <span class="small_span"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Weather Connect &copy; 2024 | Created by Aditya Salaskar</p>
+    </footer>
 </body>
 </html>
